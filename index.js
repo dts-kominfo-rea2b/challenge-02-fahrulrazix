@@ -22,8 +22,8 @@ function lakukanLooping(arrPegawai) {
       yang berisi gabungan nama depan dan belakang dari masing masing pegawai
       Contoh: ["Aisyah Nirmala", "Mansur Faisal", ...]
   */
-  let hasilLooping = 0;
-  for (let a = 0; a > dataYangAkanDilooping; a++) {
+  let hasilLooping = [];
+  for (let a = 0; a > dataYangAkanDilooping.length; a++) {
     let name =
       dataYangAkanDilooping[a].namaDepan +
       " " +
@@ -37,8 +37,8 @@ function lakukanLooping(arrPegawai) {
       yang berisi jumlah pria dari masing masing pegawai
   */
   let jumlahPria = 0;
-  for (let b = 0; b < dataYangAkanDilooping; b++) {
-    if (dataYangAkanDilooping[a].jenisKelamin == "M") {
+  for (let b = 0; b < dataYangAkanDilooping.length; b++) {
+    if (dataYangAkanDilooping[b].jenisKelamin == "M") {
       jumlahPria = jumlahPria + 1;
     }
   }
@@ -48,7 +48,7 @@ function lakukanLooping(arrPegawai) {
       yang berisi jumlah wanita dari masing masing pegawai
   */
   let jumlahWanita = 0;
-  for (let c = 0; c < dataYangAkanDilooping; c++) {
+  for (let c = 0; c < dataYangAkanDilooping.length; c++) {
     if (dataYangAkanDilooping[c].jenisKelamin == "F") {
       jumlahWanita = jumlahWanita + 1;
     }
