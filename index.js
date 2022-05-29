@@ -29,7 +29,7 @@ function lakukanLooping(arrPegawai) {
       " " +
       dataYangAkanDilooping[a].namaBelakang;
     hasilLooping[a] = name;
-    hasilLooping[a + 1];
+    hasilLooping[a];
   }
 
   /*
